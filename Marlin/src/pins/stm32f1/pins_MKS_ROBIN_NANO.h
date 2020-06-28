@@ -144,7 +144,7 @@
 #endif
 
 #define SDIO_SUPPORT
-#define SDIO_CLOCK                       4500000   // 4.5 MHz
+#define SDIO_CLOCK 4500000                        // 4.5 MHz
 #define SD_DETECT_PIN                       PD12
 #define ONBOARD_SD_CS_PIN                   PC11
 
@@ -246,8 +246,6 @@
   #define FSMC_RS_PIN                       PD11  // A0
 
   #define LCD_RESET_PIN                     PC6   // FSMC_RST
-  #define NO_LCD_REINIT                           // Suppress LCD re-initialization
-
   #define LCD_BACKLIGHT_PIN                 PD13
 
   #if ENABLED(TOUCH_BUTTONS)
