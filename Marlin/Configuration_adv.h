@@ -3018,8 +3018,6 @@
 #endif
 
 /**
-<<<<<<< HEAD
-=======
  * Power Monitor
  * Monitor voltage (V) and/or current (A), and -when possible- power (W)
  *
@@ -3038,7 +3036,6 @@
 #endif
 
 /**
->>>>>>> bugfix-2.0.x
  * CNC Coordinate Systems
  *
  * Enables G53 and G54-G59.3 commands to select coordinate systems
