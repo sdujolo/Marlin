@@ -92,7 +92,7 @@ Stepper stepper; // Singleton
 #include "motion.h"
 
 #include "temperature.h"
-#include "../lcd/ultralcd.h"
+#include "../lcd/marlinui.h"
 #include "../gcode/queue.h"
 #include "../sd/cardreader.h"
 #include "../MarlinCore.h"
@@ -2962,7 +2962,7 @@ void Stepper::report_positions() {
   #if HAS_MOTOR_CURRENT_SPI || HAS_MOTOR_CURRENT_PWM
 
     void Stepper::set_digipot_current(const uint8_t driver, const int16_t current) {
-      if (WITHIN(driver, 0, COUNT(motor_current_setting) - 1))
+      if (WITHIN(driver, 0, MOTOR_CURRENT_COUNT - 1))
         motor_current_setting[driver] = current; // update motor_current_setting
 
       if (!initialized) return;
